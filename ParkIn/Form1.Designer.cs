@@ -70,27 +70,30 @@
             parkOutButton.FlatStyle = FlatStyle.Flat;
             parkOutButton.Font = new Font("Tahoma", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             parkOutButton.ForeColor = Color.White;
-            parkOutButton.Location = new Point(15, 248);
+            parkOutButton.Location = new Point(3, 248);
             parkOutButton.Name = "parkOutButton";
-            parkOutButton.Size = new Size(230, 56);
+            parkOutButton.Size = new Size(258, 56);
             parkOutButton.TabIndex = 4;
             parkOutButton.Text = "PARK OUT";
             parkOutButton.TextAlign = ContentAlignment.MiddleLeft;
             parkOutButton.UseVisualStyleBackColor = true;
+            parkOutButton.Click += parkOutButton_Click;
             // 
             // parkInButton
             // 
+            parkInButton.BackColor = Color.White;
+            parkInButton.FlatAppearance.BorderColor = SystemColors.WindowFrame;
             parkInButton.FlatAppearance.BorderSize = 0;
             parkInButton.FlatStyle = FlatStyle.Flat;
             parkInButton.Font = new Font("Tahoma", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            parkInButton.ForeColor = Color.White;
-            parkInButton.Location = new Point(15, 175);
+            parkInButton.ForeColor = SystemColors.WindowFrame;
+            parkInButton.Location = new Point(3, 175);
             parkInButton.Name = "parkInButton";
-            parkInButton.Size = new Size(230, 56);
+            parkInButton.Size = new Size(261, 56);
             parkInButton.TabIndex = 3;
             parkInButton.Text = "PARK IN";
             parkInButton.TextAlign = ContentAlignment.MiddleLeft;
-            parkInButton.UseVisualStyleBackColor = true;
+            parkInButton.UseVisualStyleBackColor = false;
             // 
             // panel1
             // 
@@ -169,6 +172,7 @@
             submitButton.TabIndex = 6;
             submitButton.Text = "SUBMIT";
             submitButton.UseVisualStyleBackColor = false;
+            submitButton.Click += submitButton_Click;
             // 
             // ParkInDash
             // 

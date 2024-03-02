@@ -40,5 +40,19 @@ namespace ParkIn
         {
             Application.Exit();
         }
+
+        private void submitButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            parkOut form = new parkOut();
+            form.ShowDialog();
+            this.Close();
+
+        }
+
+        private void parkOutButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

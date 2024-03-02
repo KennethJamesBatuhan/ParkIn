@@ -16,5 +16,28 @@ namespace ParkIn
         {
             InitializeComponent();
         }
+
+        private void submitButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void parkInButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ParkInDash form = new ParkInDash();
+            form.ShowDialog();
+            this.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+        
+        }
+
+        private void button23_Click(object sender, EventArgs e)
+        {
+           
+        }
     }
 }
